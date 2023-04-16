@@ -5,10 +5,10 @@ all: build test
 .ONESHELL:
 framework:
 	cd catch2
-	g++ $(OFLAGS) -c catch_amalgamated.cpp -o catch_catch_amalgamated.o
+	g++ $(OFLAGS) -c catch_amalgamated.cpp -o catch_amalgamated.o
 
 main:
-	g++ $(OFLAGS) -o a main.cpp
+	g++ $(OFLAGS) main.cpp -o a
 	./a.exe
 
 build:
